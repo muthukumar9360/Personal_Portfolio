@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muthuramalingam.A-Portfolio</title>
+    <link rel="icon" href="Images/cropped_image.png" type="png">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 90%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 90%;
+            }
+        }
+      
+        .animate-gradient {
+            background: linear-gradient(90deg, #acf209, #1500fe,#acf209);
+            background-size: 200% 200%;
+            animation: gradientMove 3s ease infinite;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .typewriter::after {
+            content: '|';
+            animation: blink 0.75s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+    </style>
+
+</head>
+<body class="overflow-x-hidden">
+
+    <div class="HomeContainer lg:flex flex-col lg:flex-row bg-black text-white w-screen min-h-screen lg:h-screen">
+        <div id="mobileSidebar" class="container hidden lg:flex fixed flex-col justify-start lg:justify-start w-full h-full lg:w-1/5 lg:h-full bg-black z-50">
+            <ul class="ulfixed list-none flex w-full flex-col items-center justify-start text-2xl font-roboto h-full gap-1.5 bg-black text-white font-bold">
+                <button class="inline text-yellow-300 text-extrabold text-3xl lg:hidden mt-5 ml-auto mr-5 z-50" onclick="getMenuClose()">✖</button>
+                <img src="Images/tech.gif" alt="Logo" class="w-full h-1/3 lg:h-1/2 object-contain -mt-5 lg:mt-0 z-5">
+                <li class="hover:overline lg:hover:underline"><a href="">Home</a></li>
+                <li class="hover:overline lg:hover:underline"><a href="">About</a></li>
+                <li class="hover:overline lg:hover:underline"><a href="">Education</a></li>
+                <li class="hover:overline lg:hover:underline"><a href="">Skills</a></li>
+                <li class="hover:overline lg:hover:underline"><a href="">Services</a></li>
+                <li class="hover:overline lg:hover:underline"><a href="">Experiences</a></li>
+                <li class="hover:overline lg:hover:underline"><a href="">Certifications</a></li>
+                <li class="hover:overline lg:hover:underline"><a href="">Projects</a></li>
+                <li class="hover:overline lg:hover:underline"><a href="">Contact</a></li>
+                <button onclick="" style="border: 2px yellow solid; font-size: 20px;" class="rounded-full p-5 py-2 lg:hidden block mt-5">Download CV</button>
+            </ul>
+            <ul class="linklist list-none lg:flex gap-3 justify-center text-3xl text-white mt-8 pb-10 hidden">
+                <li><a href="https://facebook.com/yourprofile" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://youtube.com/yourchannel" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="w-1/5 h-full hidden lg:block"></div>
+        <div class="w-full lg:w-4/5 lg:flex flex-col gap-3 h-full lg:pt-5 lg:pb-12 lg:pr-12 hidden section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+            <div class="flex justify-between">
+                <h1 class="text-3xl text-blue-300 font-bold ml-6" id="mk">MK.</h1>
+                <h1 class="text-4xl font-extrabold text-white ml-6" style="text-shadow: 5px 5px 5px rgb(60, 0, 255)">PORTFOLIO</h1>
+                <button class="text-white font-extrabold text-3xl mr-6" id="themeIcon" onclick="toggleTheme()">🌚</button>
+            </div>
+            <div class="lg:h-full h-auto relative w-full bg-cover bg-no-repeat rounded-3xl" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 60%), url('Images/bg1.jpg');">            
+                <div class="absolute inset-0 w-3/5 my-7 ml-7 mr-auto rounded-3xl bg-white/10 backdrop-blur-[6px] text-white hidden lg:block">
+                    <div class="flex flex-col justify-evenly items-start w-full p-8">
+                        <h1 class="font-bold text-5xl">HELLO! What's up? </h1>
+                        <h1 class="font-bold text-6xl mt-3">I'm<span>&nbsp;</span></h1>
+                        <span class="text-6xl font-extrabold bg-gradient-to-r from-yellow-900 via-red-200 to-blue-900 bg-clip-text text-transparent pb-2 mt-3 animate-gradient">Muthuramalingam.A</span>
+                    </div>
+                    <div class="px-10">
+                        <p id="typewriterText" class="text-4xl font-extrabold -mt-5 text-white typewriter"></p>
+                        <p class="text-xl mt-5 font-ibm">I'm a dedicated Full Stack Developer skilled in building complete web applications from front-end to back-end. With a passion for clean code and intuitive design and create scalable, responsive solutions using modern technologies. I enjoy solving complex problems and constantly learning to stay ahead in the development world.</p>
+                        <div class="w-full flex justify-center gap-6 font-extrabold text-1xl mt-2">
+                            <button onclick="" style="border: 2px yellow solid;" class="rounded-full px-10 lg:px-12 py-2 lg:mt-5 lg:mb-8 mt-2">Hire Me 🤝</button>
+                            <button onclick="" style="border: 2px yellow solid;" class="rounded-full p-5 lg:px-8 py-2 lg:mt-5 lg:mb-8 mt-2">Download CV ⬇️</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="lg:hidden w-full h-screen relative bg-cover bg-center bg-no-repeat " style="background-image: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url('Images/homebg.jpg');">
+            <div class="fixed top-5 left-5 z-[9999]">
+                <button onclick="getMenu()" id="hamburgerIcon" class="text-yellow-300 p-0.5 font-extrabold text-4xl border-white border-2">
+                  &#9776;
+                </button>
+              </div>
+            <div class="absolute inset-0 pl-5 pr-12 flex flex-col justify-end text-white mb-5 section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+                <div class="bg-white/10 rounded-3xl w-full max-w-[100%] p-5">
+                    <ul class="flex list-none gap-2.5 justify-start text-2xl text-white pb-2">
+                        <li><a href="https://facebook.com/yourprofile" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://youtube.com/yourchannel" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                    <h1 class="font-extrabold text-xl">HELLO! What's up?</h1>
+                    <h1 class="font-extrabold text-2xl">I'm</h1>
+                    <span class="text-2xl font-extrabold text-yellow-300">Muthuramalingam.A</span>
+                    <p class="text-xs mt-2 font-ibm">I'm a dedicated Full Stack Developer skilled in building complete web applications from front-end to back-end. With a passion for clean code and intuitive design and create scalable, responsive solutions using modern technologies. I enjoy solving complex problems and constantly learning to stay ahead in the development world.</p>
+                    <div class="flex flex-col gap-3 font-extrabold text-sm mt-5">
+                        <button class="rounded-full py-2 border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black transition">Hire Me 🤝</button>
+                        <button class="rounded-full py-2 border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black transition">Download CV ⬇️</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <hr><hr><hr><hr><hr>
+
+    <div class="flex flex-col lg:flex-row w-screen lg:h-screen bg-black min-h-screen">
+        <div class="w-1/4 h-full hidden lg:block"></div>
+        <div class="w-full lg:w-1/2 flex h-full items-center justify-center bg-[url('Images/gif.gif')] bg-contain bg-no-repeat bg-center">
+            <img src="Images/imgog.png" alt="Muthukumar" class="h-full w-full drop-shadow-[0_0_10px_rgba(59,130,246,1.0)]">
+        </div>
+        <div class="bg-black w-full lg:w-1/2 flex flex-col items-center text-white pt-3 lg:pt-0 lg:pr-16 lg:pl-5 px-8 section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+            <div class="w-full">
+                <h3 class="lg:text-[70px] text-[45px] font-extrabold text-yellow-400 lg:pt-7 w-full text-center">
+                    ABOUT <span class="text-pink-400">ME <span class="text-yellow-400">!</span></span>
+                </h3>
+            </div>            
+            <p class="text-[12px] lg:text-[15px] text-center font-ibm pt-2">Hi! I’m a Computer Science and Engineering student, graduating in 2027. I'm passionate about full-stack development, currently focused on Java, Spring Boot, MySQL, HTML, CSS, and JavaScript.<br><br>
+            I’ve built dynamic platforms with session handling, database integration, and code execution features and handling most logic on the backend with Java, minimizing frontend JavaScript.<br><br>
+            I’m also learning JavaScript basics and diving deeper into Spring Boot for backend jobs. I enjoy solving real-world problems through code and continuously strive to improve my skills with each project I build.</p>
+            <div class="pt-7">
+                <div class="flex lg:gap-4 gap-2">
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold flex items-center gap-2">
+                      <span class="lg:block hidden">🚀 View my</span> Github →
+                    </a>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold flex items-center gap-2">
+                      <span class="hidden lg:block">💬 Contact me →</span>
+                      <span class="block lg:hidden"> Contact →</span>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 lg:gap-8 pt-8 lg:pt-12 px-0 lg:px-5 pb-8 lg:pb-0">
+                <div class="bg-neutral-800 rounded-xl p-2 lg:p-4 border border-neutral-700">
+                    <div class="flex items-center gap-4 text-orange-500 text-sm lg:text-lg mb-2">
+                        <span>💻</span>
+                        <h4 class="text-white font-bold lg:font-extrabold">Website Development</h4>
+                    </div>
+                    <p class="text-neutral-300 text-sm pt-2 font-extralight lg:font-normal">
+                        Building high-performance websites with clean code and strong SEO fundamentals.
+                    </p>
+                </div>
+                <div class="bg-neutral-800 rounded-xl p-2 lg:p-4 border border-neutral-700">
+                    <div class="flex items-center gap-4 text-orange-500 text-sm lg:text-lg mb-2">
+                      <span>☕</span>
+                      <h4 class="text-white font-bold lg:font-extrabold">Java Backend Development</h4>
+                    </div>
+                    <p class="text-neutral-300 text-sm pt-2 font-extralight lg:font-normal">
+                      Building secure backend systems with Spring Boot for real-world applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr><hr><hr><hr><hr>
+
+    <div id="services" class="w-screen flex justify-center items-center bg-black text-white">
+        <div class="w-1/5 hidden lg:block bg-black"></div>
+        <div class="flex flex-col w-4/5 h-full items-center justify-center px-0 lg:px-10">
+            <h1 class="lg:mt-10 m-10 lg:m-0 text-3xl border-4 border-yellow-500 px-10 py-2 rounded-full font-extrabold">Services</h1>
+            <div class="grid grid-cols-1 gap-8 lg:gap-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-7 lg:p-10 w-full h-full mb-7 lg:mb-0">
+                <div class="relative group">
+                    <div class="absolute top-0 left-0 w-full h-full bg-yellow-400 p-3 rounded-3xl flex flex-col items-center gap-10 z-0"></div>
+                    <div class="relative bg-black p-5 rounded-3xl flex flex-col items-center gap-10 transition-transform transform group-hover:rotate-3 z-10 border-white border-2">
+                        <h1 class="text-2xl font-extrabold">Web Application Development</h1>
+                        <img src="Images/web.jpg" alt="Web development" loading="lazy" class="rounded-full w-[150px] h-[150px]">
+                        <p>I create custom web applications that are scalable, secure, and tailored to your business needs. Whether it's a complex enterprise system or a small interactive platform, I ensure a seamless user experience with efficient backend solutions.</p>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute top-0 left-0 w-full h-full bg-yellow-400 p-3 rounded-3xl flex flex-col items-center gap-10 z-0"></div>
+                    <div class="relative bg-black p-5 rounded-3xl flex flex-col items-center gap-10 transition-transform transform group-hover:rotate-3 z-10 border-2 border-white">
+                        <h1 class="text-2xl font-extrabold">Backend Development with Java</h1>
+                        <img src="Images/backend.jpg" alt="Java Backend" loading="lazy" class="rounded-full w-[150px] h-[150px]">
+                        <p>I specialize in building scalable and efficient backend systems using Java, with a strong focus on security, performance, and maintainability. I develop APIs, manage database interactions, and implement business logic seamlessly.</p>
+                    </div>
+                </div>
+                <div class="relative group service hidden lg:block">
+                    <div class="absolute top-0 left-0 w-full h-full bg-yellow-400 p-3 rounded-3xl flex flex-col items-center gap-10 z-0"></div>
+                    <div class="relative bg-black p-5 rounded-3xl flex flex-col items-center gap-10 transition-transform transform group-hover:rotate-3 z-10 border-2 border-white">
+                        <h1 class="text-2xl font-extrabold">Database Architecture & Management</h1>
+                        <img src="Images/db.jpg" alt="Database" loading="lazy" class="rounded-full w-[150px] h-[150px]">
+                        <p>I offer database design and management services to ensure data is organized efficiently and stored securely. From schema design to query optimization, I help you build secure and reliable databases for any type of web related application.</p>
+                    </div>
+                </div>
+                <div class="relative group service hidden lg:block">
+                    <div class="absolute top-0 left-0 w-full h-full bg-yellow-400 p-3 rounded-3xl flex flex-col items-center gap-10 z-0"></div>
+                    <div class="relative bg-black p-5 rounded-3xl flex flex-col items-center gap-10 transition-transform transform group-hover:rotate-3 z-10 border-2 border-white">
+                        <h1 class="text-2xl font-extrabold">Responsive Front-End Development</h1>
+                        <img src="Images/frontend.jpg" loading="lazy" alt="Frontend" class="rounded-full w-[150px] h-[150px]">
+                        <p class="mt-2">I build responsive, user-friendly and unique design interfaces using HTML, CSS, Tailwind CSS and JavaScript, ensuring that websites look great and function flawlessly on any device. I prioritize usability and performance for an optimal user experience.</p>
+                    </div>
+                </div>
+                <div class="relative group service hidden lg:block">
+                    <div class="absolute top-0 left-0 w-full h-full bg-yellow-400 rounded-3xl flex flex-col items-center gap-10 z-0"></div>
+                    <div class="relative bg-black p-5 rounded-3xl flex flex-col items-center gap-10 transition-transform transform group-hover:rotate-3 z-10 border-2 border-white">
+                        <h1 class="text-2xl font-extrabold">Custom API Development & Integration</h1>
+                        <img src="Images/pexels-pixabay-270632.jpg" loading="lazy" alt="API development" class="rounded-full w-[150px] h-[150px]">
+                        <p>I design and implement RESTful APIs that ensure smooth communication between your web applications and backend systems. I also integrate third-party APIs to enhance your application’s capabilities.</p>
+                    </div>
+                </div>
+                <div class="relative group service hidden lg:block">
+                    <div class="absolute top-0 left-0 w-full h-full bg-yellow-500 rounded-3xl flex flex-col items-center gap-10 z-0 justify-center"></div>
+                    <div class="relative bg-black p-5 rounded-3xl flex flex-col items-center gap-10 transition-transform transform group-hover:rotate-3 z-10 border-2 border-white justify-center">
+                        <h1 class="text-2xl font-extrabold">Consultation & Technical Guidance</h1>
+                        <img src="Images/gd.jpg" loading="lazy" alt="Group" class="rounded-full w-[150px] h-[150px]">
+                        <p class="pt-2">I provide expert consultation for your web development projects, offering technical guidance and best practices. Whether you need advice on architecture, tools, or workflows, I help you make informed decisions to achieve project success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center lg:hidden block mb-7">
+                <button id="viewMoresBtn" class="bg-yellow-500 text-white px-4 py-2 rounded-full" onclick="showservice()">View More Services</button>
+            </div>
+        </div>
+    </div>      
+    <hr><hr><hr><hr><hr>
+
+    <div class="w-screen flex justify-center bg-black text-white">
+        <div class="w-1/5 hidden lg:block"></div>
+        <div class="w-4/5 flex flex-col gap-5 items-center section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+            <h1 class="mt-10 font-extrabold text-3xl border-4 border-yellow-500 px-10 py-3 rounded-full">My Skills</h1>
+            <h1 class="text-2xl font-normal w-full text-center mb-5">My Key Expertises and Technical Proficiencies</h1>
+            <div class="grid grid-cols-3 gap-x-10 gap-y-10 lg:grid-cols-6 lg:gap-x-24 lg:gap-y-10 lg:px-20 pb-16 px-3">
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">HTML</h1>
+                    <img src="Logos/html.png" alt="">
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">CSS</h1>
+                    <img src="Logos/css.png" alt="">
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">TAILWIND</h1>
+                    <img src="Logos/Tailwind CSS.png" alt="">
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">JAVASCRIPT</h1>
+                    <img src="Logos/js.png" alt="">
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">REACT</h1>
+                    <img src="Logos/React.png" alt="">
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">C++</h1>
+                    <img src="Logos/c-.png" alt="">
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">PYTHON</h1>
+                    <img src="Logos/python.png" alt="">
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">JAVA</h1>
+                    <img src="Logos/java.png" alt="">
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">SPRING</h1>
+                    <img src="Logos/Spring.png" alt="">
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">MYSQL</h1>
+                    <img src="Logos/mysql.png" alt="">
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">MONGODB</h1>
+                    <img src="Logos/MongoDB.png" alt="">
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="font-extrabold">GITHUB</h1>
+                    <img src="Logos/github.png" alt="">
+                </div>
+            </div>            
+        </div>
+    </div>
+    <hr><hr><hr><hr><hr>
+
+    <section class="w-screen lg:h-[65vh] relative flex bg-black text-white z-10">
+        <div class="w-1/5 hidden lg:block"></div>
+        <div class="lg:w-4/5 w-full relative flex flex-col items-center justify-center mt-10 mb-10 lg:mb-0 lg:mt-0">
+          <img src="Images/tech2.gif" alt="Tech" class="lg:h-[300px] h-[120px] w-full lg:mx-20 px-5">
+          <h3 class="absolute z-5 top-[18%] lg:top-[24%] lg:left-[38%] text-[10px] lg:text-[20px] font-light" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">I CONSTANTLY TRY TO IMPROVE</h3>
+          <h1 class="absolute lg:top-[40%] lg:left-[34%] text-[40px] lg:text-[70px] font-light" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">My Tech Stack</h1>
+        </div>
+    </section>
+    <div class="w-screen h-auto lg:flex justify-center text-white bg-black z-20 pb-5 lg:pb-0">
+        <div class="w-1/5 hidden lg:block"></div>
+        <section class="relative w-full lg:w-4/5 lg:max-w-6xl max-w-4xl pb-10 hidden lg:block">
+            <div class="flex justify-center lg:items-start items-center">
+                <h1 class="mb-10 font-extrabold text-3xl border-4 border-yellow-500 px-10 py-3 rounded-full text-center mt-5 lg:-mt-32 z-20">My Projects</h1>
+            </div>
+            <div class="overflow-hidden lg:flex">
+                <div class="flex transition-transform duration-500 sm:justify-start" id="slider">
+                <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md border-2 border-yellow-500 p-2 flex flex-col justify-between">
+                <div>
+                    <img src="Projects/pro1.jpeg" alt="Portfolio Website" class="lg:w-full lg:h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500 transition-shadow duration-300">
+                    <h3 class="lg:text-2xl text-1xl font-extrabold text-white mb-2">Portfolio Website</h3>
+                    <p class="text-white text-sm mb-3">
+                      A responsive portfolio using HTML, CSS & JS. Showcases skills, projects, and contact info. Mobile-friendly layout and smooth scroll navigation.
+                    </p>
+                </div>
+                <a href="https://github.com/yourusername/portfolio-website" target="_blank"
+                     class="mt-3 inline-block text-sm text-black bg-yellow-500 hover:bg-yellow-600 font-semibold px-4 py-2 rounded-lg transition-all duration-300 text-center">
+                    View Source Code
+                </a>
+                </div>
+          
+                <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
+                  <div>
+                    <img src="Projects/pro2.jpg" alt="E-commerce Site" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <h3 class="text-2xl font-extrabold text-white mb-2">E-commerce Website</h3>
+                    <p class="text-white text-sm mb-3">
+                      Full-stack Java Spring Boot e-commerce app with MySQL backend. Features include user auth, product management, and payment integration.
+                    </p>
+                  </div>
+                  <a href="https://github.com/yourusername/ecommerce-app" target="_blank"
+                     class="mt-3 inline-block text-sm text-black bg-yellow-500 hover:bg-yellow-600 font-semibold px-4 py-2 rounded-lg transition-all duration-300 text-center">
+                    View Source Code
+                  </a>
+                </div>
+          
+                <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
+                  <div>
+                    <img src="Projects/pro3.webp" alt="Weather App" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <h3 class="text-2xl font-extrabold text-white mb-2">Weather Dashboard</h3>
+                    <p class="text-white text-sm mb-3">
+                      JavaScript-based app that fetches real-time weather data from OpenWeatherMap API. Displays temperature, wind, humidity, and more.
+                    </p>
+                  </div>
+                  <a href="https://github.com/yourusername/weather-dashboard" target="_blank"
+                     class="mt-3 inline-block text-sm text-black bg-yellow-500 hover:bg-yellow-600 font-semibold px-4 py-2 rounded-lg transition-all duration-300 text-center">
+                    View Source Code
+                  </a>
+                </div>
+          
+                <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
+                  <div>
+                    <img src="Projects/pro4.jpeg" alt="Quiz App" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <h3 class="text-2xl font-extrabold text-white mb-2">Quiz Platform</h3>
+                    <p class="text-white text-sm mb-3">
+                      A Java-based quiz system using Servlets & MySQL. Features timed questions, score tracking, session management, and leaderboard.
+                    </p>
+                  </div>
+                  <a href="https://github.com/yourusername/quiz-platform" target="_blank"
+                     class="mt-3 inline-block text-sm text-black bg-yellow-500 hover:bg-yellow-600 font-semibold px-4 py-2 rounded-lg transition-all duration-300 text-center">
+                    View Source Code
+                  </a>
+                </div>
+          
+                <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
+                  <div>
+                    <img src="Projects/pro5.jpg" alt="Student Info System" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <h3 class="text-2xl font-extrabold text-white mb-2">Student Info System</h3>
+                    <p class="text-white text-sm mb-3">
+                      A CRUD-based system to manage student records including profile pictures, grades, and contact info using Java Spring Boot & MySQL.
+                    </p>
+                  </div>
+                  <a href="https://github.com/yourusername/student-info-system" target="_blank"
+                     class="mt-3 inline-block text-sm text-black bg-yellow-500 hover:bg-yellow-600 font-semibold px-4 py-2 rounded-lg transition-all duration-300 text-center">
+                    View Source Code
+                  </a>
+                </div>
+
+                <div class="min-w-[calc(33.33%-20px)] lg:mx-2 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
+                  <div>
+                    <img src="Projects/pro6.webp" alt="To-Do App" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <h3 class="text-2xl font-extrabold text-white mb-2">To-Do List App</h3>
+                    <p class="text-white text-sm mb-3">
+                      A simple yet effective to-do list with localStorage, due dates, and priority highlighting. Built using HTML, CSS, and vanilla JavaScript.
+                    </p>
+                  </div>
+                  <a href="https://github.com/yourusername/todo-app" target="_blank"
+                     class="mt-3 inline-block text-sm text-black bg-yellow-500 hover:bg-yellow-600 font-semibold px-4 py-2 rounded-lg transition-all duration-300 text-center">
+                    View Source Code
+                  </a>
+                </div>
+
+                <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
+                  <div>
+                    <img src="Projects/pro7.jpeg" alt="Code Executor" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <h3 class="text-2xl font-extrabold text-white mb-2">Online Code Executor</h3>
+                    <p class="text-white text-sm mb-3">
+                      Code editor with Ace Editor + backend support in Java using ProcessBuilder. Supports Java, Python, C, and C++ with test case validation.
+                    </p>
+                  </div>
+                  <a href="https://github.com/yourusername/code-executor" target="_blank"
+                     class="mt-3 inline-block text-sm text-black bg-yellow-500 hover:bg-yellow-600 font-semibold px-4 py-2 rounded-lg transition-all duration-300 text-center">
+                    View Source Code
+                  </a>
+                </div>
+
+                <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
+                  <div>
+                    <img src="Projects/pro8.jpeg" alt="Blog Website" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <h3 class="text-2xl font-extrabold text-white mb-2">Personal Blog Website</h3>
+                    <p class="text-white text-sm mb-3">
+                      A static blog with markdown support. Built using HTML, Tailwind CSS, and JS. Supports dark mode and responsive design.
+                    </p>
+                  </div>
+                  <a href="https://github.com/yourusername/blog-website" target="_blank"
+                     class="mt-3 inline-block text-sm text-black bg-yellow-500 hover:bg-yellow-600 font-semibold px-4 py-2 rounded-lg transition-all duration-300 text-center">
+                    View Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="block lg:hidden">
+            <div class="flex justify-center lg:items-start items-center">
+                <h1 class="mb-3 font-extrabold text-3xl border-4 border-yellow-500 px-10 py-3 rounded-full text-center mt-5 lg:-mt-32">My Projects</h1>
+            </div>
+            <div class="grid grid-cols-1 gap-y-5 p-5 z-5">
+                <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg">
+                    <img src="Projects/pro1.jpeg" alt="Portfolio Website"
+                        class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
+                              translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
+                              transition-all duration-500 ease-in-out">
+                        <h1 class="text-white text-3xl font-extrabold mb-2">Portfolio Website</h1>
+                        <p class="text-white text-sm mb-4">
+                            A responsive portfolio using HTML, CSS & JS. Showcases skills, projects, and contact info. 
+                            Mobile-friendly layout and smooth scroll navigation.
+                        </p>
+                        <a href="https://github.com/yourusername/portfolio-website" class="text-yellow-400 underline">View Source Code</a>
+                    </div>
+                </div>
+                
+                <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg">
+                    <img src="Projects/pro2.jpg" alt="E-commerce Website"
+                        class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
+                              translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
+                              transition-all duration-500 ease-in-out">
+                        <h1 class="text-white text-3xl font-extrabold mb-2">E-commerce Website</h1>
+                        <p class="text-white text-sm mb-4">
+                            Full-stack Java Spring Boot e-commerce app with MySQL backend. Features include user auth, product management, and payment integration.
+                        </p>
+                        <a href="https://github.com/yourusername/ecommerce-app" class="text-yellow-400 underline">View Source Code</a>
+                    </div>
+                </div>
+                
+                <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
+                    <img src="Projects/pro3.webp" alt="Weather Dashboard"
+                        class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
+                              translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
+                              transition-all duration-500 ease-in-out">
+                        <h1 class="text-white text-3xl font-extrabold mb-2">Weather Dashboard</h1>
+                        <p class="text-white text-sm mb-4">
+                            JavaScript-based app that fetches real-time weather data from OpenWeatherMap API. Displays temperature, wind, humidity, and more.
+                        </p>
+                        <a href="https://github.com/yourusername/weather-dashboard" class="text-yellow-400 underline">View Source Code</a>
+                    </div>
+                </div>
+                
+                <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
+                    <img src="Projects/pro4.jpeg" alt="Quiz Platform"
+                        class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
+                              translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
+                              transition-all duration-500 ease-in-out">
+                        <h1 class="text-white text-3xl font-extrabold mb-2">Quiz Platform</h1>
+                        <p class="text-white text-sm mb-4">
+                            A Java-based quiz system using Servlets & MySQL. Features timed questions, score tracking, session management, and leaderboard.
+                        </p>
+                        <a href="https://github.com/yourusername/quiz-platform" class="text-yellow-400 underline">View Source Code</a>
+                    </div>
+                </div>
+                
+                <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
+                    <img src="Projects/pro5.jpg" alt="Student Info System"
+                        class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
+                              translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
+                              transition-all duration-500 ease-in-out">
+                        <h1 class="text-white text-3xl font-extrabold mb-2">Student Info System</h1>
+                        <p class="text-white text-sm mb-4">
+                            A CRUD-based system to manage student records including profile pictures, grades, and contact info using Java Spring Boot & MySQL.
+                        </p>
+                        <a href="https://github.com/yourusername/student-info-system" class="text-yellow-400 underline">View Source Code</a>
+                    </div>
+                </div>
+                
+                <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
+                    <img src="Projects/pro6.webp" alt="To-Do List App"
+                        class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
+                              translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
+                              transition-all duration-500 ease-in-out">
+                        <h1 class="text-white text-3xl font-extrabold mb-2">To-Do List App</h1>
+                        <p class="text-white text-sm mb-4">
+                            A simple yet effective to-do list with localStorage, due dates, and priority highlighting. Built using HTML, CSS, and vanilla JavaScript.
+                        </p>
+                        <a href="https://github.com/yourusername/todo-app" class="text-yellow-400 underline">View Source Code</a>
+                    </div>
+                </div>
+                
+                <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
+                    <img src="Projects/pro7.jpeg" alt="Online Code Executor"
+                        class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
+                              translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
+                              transition-all duration-500 ease-in-out">
+                        <h1 class="text-white text-3xl font-extrabold mb-2">Online Code Executor</h1>
+                        <p class="text-white text-sm mb-4">
+                            Code editor with Ace Editor + backend support in Java using ProcessBuilder. Supports Java, Python, C, and C++ with test case validation.
+                        </p>
+                        <a href="https://github.com/yourusername/code-executor" class="text-yellow-400 underline">View Source Code</a>
+                    </div>
+                </div>
+                
+                <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
+                    <img src="Projects/pro8.jpeg" alt="Blog Website"
+                        class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
+                              translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
+                              transition-all duration-500 ease-in-out">
+                        <h1 class="text-white text-3xl font-extrabold mb-2">Personal Blog Website</h1>
+                        <p class="text-white text-sm mb-4">
+                            A static blog with markdown support. Built using HTML, Tailwind CSS, and JS. Supports dark mode and responsive design.
+                        </p>
+                        <a href="https://github.com/yourusername/blog-website" class="text-yellow-400 underline">View Source Code</a>
+                    </div>
+                </div>                
+            </div>
+            <div class="text-center">
+                <button id="viewMoreBtn" class="bg-yellow-500 text-white px-4 py-2 rounded-full mt-2 mb-2" onclick="showprojects()">View More Projects</button>
+            </div>          
+        </section>            
+    </div>
+    <hr><hr><hr><hr><hr>
+
+    <section id="education" class="py-8 bg-black text-white flex px-3">
+        <div class="w-1/5 hidden lg:block"></div>
+        <div class="w-full lg:w-4/5 bg-black px-0 lg:px-24 section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+            <div class="text-center">
+                <h2 class="text-4xl lg:text-6xl font-extrabold text-yellow-300 mb-3">Education</h2>
+                <h2 class="text-2xl font-extrabold text-white mb-3">My Academic journey</h2>
+                <p class="text-lg text-white mb-12">A brief overview of my educational journey, where I’ve acquired the knowledge and skills to build innovative solutions.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 pt-0 lg:pt-10 lg:pl-0 lg:pr-0 pr-5 pl-10 pb-5">
+                <div class="relative bg-gradient-to-r from-indigo-500 to-teal-400 p-5 lg:p-10 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:shadow-white">
+                    <div class="absolute top-0 left-0 transform translate-x-[-50%] translate-y-[-50%] bg-white p-2 rounded-full shadow-lg">
+                        <img src="Images/saratha png.png" alt="School Logo" class="h-16 w-16 lg:h-24 lg:w-24 object-center">
+                    </div>
+                    <h3 class="text-2xl lg:text-3xl font-semibold text-black mt-6">Senior Secondary School (12th Grade)</h3>
+                    <p class="text-lg text-black font-bold mt-2">Saratha Matric Higher Secondary School</p>
+                    <p class="text-lg text-gray-100 mt-1">Graduated in 2023</p>
+                    <p class="mt-4 text-lg text-gray-200">Specialized in Science, excelling in Mathematics, Physics, and Computer Science courses.</p>
+                    <p class="mt-2 text-lg text-gray-200">District: Tirunelveli, State: Tamil Nadu</p>
+                    <p class="mt-2 text-lg text-gray-200">Percentage: 94%</p>
+                </div>
+                <div class="relative bg-gradient-to-r from-indigo-500 to-teal-400 p-5 lg:p-10 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:shadow-white">
+                    <div class="absolute top-0 left-0 transform translate-x-[-50%] translate-y-[-50%] bg-white p-2 rounded-full shadow-lg">
+                        <img src="Images/nec png.png" alt="College Logo" class="h-16 w-16 lg:h-24 lg:w-24 object-center">
+                    </div>
+                    <h3 class="text-2xl lg:text-3xl font-semibold text-black mt-6">Bachelor of Engineering in Computer Science</h3>
+                    <p class="text-lg text-black font-bold mt-2">National Engineering College</p>
+                    <p class="text-lg text-gray-100 mt-1">Graduating in 2027</p>
+                    <p class="mt-4 text-lg text-gray-200">Focusing on Web development, data structures with hands-on in modern web technologies.</p>
+                    <p class="mt-2 text-lg text-gray-200">District: Tuticorin, State: Tamil Nadu</p>
+                    <p class="mt-2 text-lg text-gray-200">Current CGPA: 8.64</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr><hr><hr><hr><hr>
+
+    <section class="bg-black flex lg:justify-center pb-10 px-5 lg:px-0">
+        <div class="w-1/5 bg-black hidden lg:block"></div>
+        <div class="w-full lg:w-4/5 bg-black section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+            <h2 class="text-3xl lg:text-6xl font-extrabold text-center text-yellow-300 mt-5">Online Certifications</h2>
+            <h2 class="text-xl lg:text-2xl font-extrabold text-white mt-3 mb-8 text-center">These aren't just certificates, they're milestones.</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 max-w-6xl mx-auto">
+                <div class="group [perspective:1000px] hidden lg:block">
+                    <div class="relative h-64 lg:h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
+                            <img src="certification/logo/nptel.png" alt="Certificate" class="h-32 object-contain"/>
+                            <div class="p-4 text-center">
+                                <h3 class="text-2xl font-bold text-gray-800">Ethical Hacking</h3>
+                                <p class="text-sm text-gray-500 mt-1">NPTEL Jul - Oct 2024</p>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-white rounded-3xl p-5 [transform:rotateY(180deg)] [backface-visibility:hidden] z-10">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">Ethical Hacking</h4>
+                            <p class="text-sm text-gray-600 mb-2">Covered network security, cryptography, penetration testing, and system vulnerabilities.</p>
+                            <ul class="text-sm text-gray-500 mb-2 list-disc pl-5">
+                                <li>Score: <span class="font-medium text-gray-700">71%</span></li>
+                                <li>Elite </li>
+                                <li>12 Week Course</li>
+                                <li>Issued by: IIT Kharagpur</li>
+                            </ul>
+                            <button onclick="openModal('certification/image/ethicalhacking.png')" class="mt-auto px-4 py-2 bg-indigo-600 text-white text-sm rounded hover:bg-indigo-700">View Certificate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group [perspective:1000px] hidden lg:block">
+                    <div class="relative h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
+                            <img src="certification/logo/nptel.png" alt="Certificate" class="h-32 object-contain"/>
+                            <div class="p-4 text-center">
+                                <h3 class="text-2xl font-bold text-gray-800">Technical English</h3>
+                                <p class="text-sm text-gray-500 mt-1">NPTEL Aug - Oct 2023</p>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-white rounded-3xl p-5 [transform:rotateY(180deg)] [backface-visibility:hidden] z-10">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">Technical English</h4>
+                            <p class="text-sm text-gray-600 mb-2">Covered technical writing, professional communication and report preparation. </p>
+                            <ul class="text-sm text-gray-500 mb-3 list-disc pl-5">
+                                <li>Score: <span class="font-medium text-gray-700">80%</span></li>
+                                <li>Elite </li>
+                                <li>8 Week Course</li>
+                                <li>Issued by: IIT Madras</li>
+                            </ul>
+                            <button onclick="openModal('certification/image/technical.png')" class="mt-auto px-4 py-2 bg-indigo-600 text-white text-sm rounded hover:bg-indigo-700">View Certificate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group [perspective:1000px] hidden lg:block">
+                    <div class="relative h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
+                            <img src="certification/logo/nptel.png" alt="Certificate" class="h-32 object-contain"/>
+                            <div class="p-4 text-center">
+                                <h3 class="text-2xl font-bold text-gray-800">Joy of Computing Python</h3>
+                                <p class="text-sm text-gray-500 mt-1">NPTEL Jan - Apr 2024</p>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-white rounded-3xl p-5 [transform:rotateY(180deg)] [backface-visibility:hidden] z-10">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">Joy of Computing Python</h4>
+                            <p class="text-sm text-gray-600 mb-2">Covered Python basics, problem-solving, automation, and simple GUI projects.</p>
+                            <ul class="text-sm text-gray-500 mb-3 list-disc pl-5">
+                                <li>Score: <span class="font-medium text-gray-700">71%</span></li>
+                                <li>Elite </li>
+                                <li>12 Week Course</li>
+                                <li>Issued by: IIT Madras</li>
+                            </ul>
+                            <button onclick="openModal('certification/image/python.png')" class="mt-auto px-4 py-2 bg-indigo-600 text-white text-sm rounded hover:bg-indigo-700">View Certificate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group [perspective:1000px]">
+                    <div class="relative h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
+                            <img src="certification/logo/coursera.png" alt="Certificate" class="h-32 object-contain"/>
+                            <div class="p-4 text-center">
+                                <h3 class="text-2xl font-bold text-gray-800">Web Development</h3>
+                                <p class="text-sm text-gray-500 mt-1">April 11 2025</p>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-white rounded-3xl p-5 [transform:rotateY(180deg)] [backface-visibility:hidden] z-10">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">Full Stack Web Development</h4>
+                            <p class="text-sm text-gray-600 mb-2">Covered full stack development with HTML, CSS, JS, and Java backend using Spring Boot and MySQL.</p>
+                            <ul class="text-sm text-gray-500 mb-3 list-disc pl-5">
+                                <li>Coursera Certified</li>
+                                <li>Certificate of Completion</li>
+                                <li>Issued by: Amazon Web Services (AWS)</li>
+                            </ul>
+                            <button onclick="openModal('certification/image/amazon.png')" class="mt-auto px-4 py-2 bg-indigo-600 text-white text-sm rounded hover:bg-indigo-700">View Certificate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group [perspective:1000px]">
+                    <div class="relative h-72 lg:h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
+                            <img src="certification/logo/coursera.png" alt="Certificate" class="h-32 object-contain"/>
+                            <div class="p-4 text-center">
+                                <h3 class="text-2xl font-bold text-gray-800">Java Programming</h3>
+                                <p class="text-sm text-gray-500 mt-1">April 11 2025</p>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-white rounded-3xl p-5 [transform:rotateY(180deg)] [backface-visibility:hidden] z-10">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">Fundamentals of Java Programming</h4>
+                            <p class="text-sm text-gray-600 mb-2">Covered Java basics, OOP concepts, exception handling, and collections framework.</p>
+                            <ul class="text-sm text-gray-500 mb-3 list-disc pl-5">
+                                <li>Coursera Certified</li>
+                                <li>Certificate of Completion</li>
+                                <li>Issued by: Board Infinity</li>
+                            </ul>
+                            <button onclick="openModal('certification/image/java.png')" class="mt-auto px-4 py-2 bg-indigo-600 text-white text-sm rounded hover:bg-indigo-700">View Certificate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group [perspective:1000px] hidden lg:block">
+                    <div class="relative h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
+                            <img src="certification/logo/udemy.jpg" alt="Certificate" class="h-32 object-cover"/>
+                            <div class="p-4 text-center">
+                                <h3 class="text-2xl font-bold text-gray-800">Javascript Programming</h3>
+                                <p class="text-sm text-gray-500 mt-1">April 13 2025</p>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-white rounded-3xl p-5 [transform:rotateY(180deg)] [backface-visibility:hidden] z-10">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">Complete JavaScript Programming</h4>
+                            <p class="text-sm text-gray-600 mb-2">Covered JavaScript fundamentals, DOM manipulation, ES6+, async programming, and project-based learning.</p>
+                            <ul class="text-sm text-gray-500 mb-3 list-disc pl-5">
+                                <li>Duration: 3.5 hours</li>
+                                <li>Certificate of Completion</li>
+                                <li>Issued by: Udemy</li>
+                            </ul>
+                            <button onclick="openModal('certification/image/javascript.png')" class="mt-auto px-4 py-2 bg-indigo-600 text-white text-sm rounded hover:bg-indigo-700">View Certificate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="modal" class="fixed inset-0 bg-black hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg overflow-hidden max-w-4xl w-full mx-4 p-2 relative">
+            <img id="modal-img" src="" alt="Certificate" class="w-full h-auto rounded" />
+            <div class="text-center mt-4">
+                <button onclick="closeModal()" class="px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+    <hr><hr><hr><hr><hr>
+
+    <section class="bg-black py-8 lg:py-12 px-8 md:px-16 lg:px-20 flex" id="experience">
+        <div class="hidden lg:block w-1/5"></div>
+        <div class="w-full lg:w-4/5 section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+            <h2 class="text-3xl font-extrabold text-white text-center mb-5 lg:mb-12">Experience & Achievements</h2>
+            <div class="relative border-l-4 border-white pl-6 lg:pl-12 py-8 flex flex-col gap-10">
+                <div class="relative">
+                    <span class="absolute -left-3 top-1 w-6 h-6 bg-yellow-400 rounded-full border-4 border-black shadow-md z-10"></span>
+                    <div class="bg-white/30 backdrop-blur-md p-6 rounded-xl shadow-md text-white">
+                    <h3 class="text-lg font-semibold">SkillRack-Style Platform (Personal Project)</h3>
+                    <p class="text-sm text-yellow-300 mb-1">2024 – Ongoing</p>
+                    <p class="text-sm text-white/90">
+                        Developing a web platform similar to Skillrack using Java Servlets, MySQL, HTML, CSS, and Tailwind.It includes user login/signup, coding challenges with real-time code execution, and a quiz system with score tracking and session handling.
+                    </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <span class="absolute -left-3 top-1 w-6 h-6 bg-yellow-400 rounded-full border-4 border-black shadow-md z-10"></span>
+                    <div class="bg-white/30 backdrop-blur-md p-6 rounded-xl shadow-md text-white">
+                        <h3 class="text-lg font-semibold">NPTEL Elite + Silver Certification</h3>
+                        <p class="text-sm text-yellow-300 mb-1">Ethical Hacking – IIT Madras</p>
+                        <p class="text-sm text-white/90">
+                        Completed the NPTEL course on Ethical Hacking with 88%. Learned about network scanning, vulnerability analysis,
+                        and security principles. Successfully completed weekly assignments and final exam with top performance.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <span class="absolute -left-3 top-1 w-6 h-6 bg-yellow-400 rounded-full border-4 border-black shadow-md z-10"></span>
+                    <div class="bg-white/30 backdrop-blur-md p-6 rounded-xl shadow-md text-white">
+                      <h3 class="text-lg font-semibold">Amazon Full Stack Developer Certification</h3>
+                      <p class="text-sm text-yellow-300 mb-1">Issued by Amazon AWS Training – 2024</p>
+                      <p class="text-sm text-white/90">
+                        Completed Amazon’s Full Stack Developer training, covering frontend, backend, databases, and deployment strategies. 
+                        Gained hands-on experience building end-to-end applications with RESTful APIs, user authentication, responsive design, 
+                        and cloud-based hosting. Implemented best practices in modular coding, MVC structure, and testing.
+                      </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <span class="absolute -left-3 top-1 w-6 h-6 bg-yellow-400 rounded-full border-4 border-black shadow-md z-10"></span>
+                    <div class="bg-white/30 backdrop-blur-md p-6 rounded-xl shadow-md text-white">
+                      <h3 class="text-lg font-semibold">Backend Development Focus</h3>
+                      <p class="text-sm text-yellow-300 mb-1">Java | Servlets | MySQL | Spring Boot</p>
+                      <p class="text-sm text-white/90">
+                        Focused deeply on backend concepts like database design, REST APIs, session tracking, and file handling using
+                        Java Servlets and Spring Boot. Built multiple backend modules with real-time validation, role-based access, and
+                        secure user authentication without using third-party frameworks.
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr><hr><hr><hr><hr>
+
+    <section class="bg-black py-12 px-6 lg:px-28 flex text-white" id="contact">
+        <div class="w-1/5 hidden lg:block"></div>
+        <div class="lg:w-4/5 w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+            <div class="animate-fade-in flex justify-center">
+                <img src="Images/contact.jpg" alt="Contact" class="w-11/12 rounded-3xl" style="box-shadow: 5px 5px 10px white;"/>
+            </div>
+            <div class="space-y-6">
+                <h2 class="text-4xl font-extrabold w-full text-center">Let's Connect</h2>
+                <p class="text-md">Whether you have a question, a project, or just want to connect — I'm always open to meaningful conversations.</p>
+                <div class="space-y-2 text-sm">
+                    <p><strong>Email:</strong> <a href="mailto:perumpatayans@gmail.com" class="hover:underline">perumpatayans@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+919360493470" class="hover:underline">+91 9360493470</a></p>
+                    <p><strong>Location:</strong> Tirunelveli, India</p>
+                </div>
+                <div class="flex space-x-4 mt-4 justify-center lg:justify-normal">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-yellow-500"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank" class="hover:text-yellow-500"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-yellow-500"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-yellow-500"><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-yellow-500"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-yellow-500"><i class="fab fa-whatsapp fa-lg"></i></a>
+                </div>
+                <form class="space-y-4 mt-6">
+                    <input type="text" placeholder="Your Name" required class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-indigo-400 outline-none" />
+                    <input type="email" placeholder="Your Email" required class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-indigo-400 outline-none" />
+                    <textarea rows="4" placeholder="Your Message" required class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-indigo-400 outline-none"></textarea>
+                    <button type="submit" class="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-all duration-200">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-center text-white py-2 flex">
+        <div class="w-1/5 hidden lg:block"></div>
+        <div class="w-full lg:w-4/5 px-4 flex flex-col lg:flex-row items-center justify-center gap-0 lg:gap-10 text-sm lg:text-xl">
+            <p>&copy; 2025 A.Muthuramalingam. All rights reserved.</p>
+            <div class="mt-3 md:mt-0 flex space-x-4">
+                <a href="https://github.com/yourusername" target="_blank" class="hover:text-yellow-600">
+                <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-yellow-600">
+                <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:perumpatayans@gmail.com" class="hover:text-yellow-600">
+                <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>   
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            const target = entry.target;
+            if (entry.isIntersecting) {
+                target.classList.remove('opacity-20', 'translate-y-10');
+                target.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                target.classList.remove('opacity-100', 'translate-y-0');
+                target.classList.add('opacity-20', 'translate-y-10');
+            }
+            });
+        }, {
+            threshold: 0.1
+        });
+        document.querySelectorAll('.section-wrapper').forEach(section => {
+            observer.observe(section);
+        });
+        
+        function showservice(){
+            const hiddenProjects = document.querySelectorAll('.service');
+            const viewMoresBtn=document.getElementById("viewMoresBtn");
+            hiddenProjects.forEach(function(project) {
+                project.classList.toggle('hidden');
+            });
+
+            if (viewMoresBtn.innerText === "View More Services") {
+            viewMoresBtn.innerText = "View Less Services";
+            } else {
+                viewMoresBtn.innerText = "View More Services";
+            }
+        }
+
+        function showprojects(){
+            const hiddenProjects = document.querySelectorAll('.project');
+            const viewMoreBtn=document.getElementById("viewMoreBtn");
+            hiddenProjects.forEach(function(project) {
+                project.classList.toggle('hidden');
+            });
+
+            if (viewMoreBtn.innerText === "View More Projects") {
+            viewMoreBtn.innerText = "View Less Projects";
+            } else {
+                viewMoreBtn.innerText = "View More Projects";
+            }
+
+        }
+
+        function openModal(src) {
+            document.getElementById('modal-img').src = src;
+            document.getElementById('modal').classList.remove('hidden');
+            document.getElementById('modal').classList.add('flex');
+        }
+        function closeModal() {
+            document.getElementById('modal').classList.remove('flex');
+            document.getElementById('modal').classList.add('hidden');
+            document.getElementById('modal-img').src = '';
+        }
+
+        const roles = [
+            "FULL STACK WEB DEVELOPER",
+            "JAVA DEVELOPER",
+            "PYTHON DEVELOPER",
+            "SPRING BOOT DEVELOPER",
+            "DATABASE ARCHITECT",
+            "UI/UX DEVELOPER",
+            "SECURITY ENGINEER",
+            "API DEVELOPER"
+        ];
+        let i = 0; 
+        let j = 0; 
+        let isDeleting = false;
+        const typingSpeed = 50;
+        const deletingSpeed = 30;
+        const pauseAfterTyping = 1000;
+        const pauseAfterDeleting = 100;
+        const el = document.getElementById("typewriterText");
+        function typeWriter() {
+            const current = roles[i];
+            if (isDeleting) {
+            el.textContent = current.substring(0, j--);
+            } else {
+            el.textContent = current.substring(0, j++);
+            }
+            if (!isDeleting && j === current.length + 1) {
+            isDeleting = true;
+            setTimeout(typeWriter, pauseAfterTyping);
+            } else if (isDeleting && j === 0) {
+            isDeleting = false;
+            i = (i + 1) % roles.length;
+            setTimeout(typeWriter, pauseAfterDeleting);
+            } else {
+            setTimeout(typeWriter, isDeleting ? deletingSpeed : typingSpeed);
+            }
+        }
+        typeWriter();
+
+        function toggleTheme() {
+            const themeIcon = document.getElementById("themeIcon");
+            const mkid=document.getElementById("mk");
+            if (themeIcon.textContent === "🌚") {
+                themeIcon.textContent = "🌞";
+                mk.classList.remove("text-blue-300");
+                mk.classList.add("text-yellow-400"); 
+            } else {
+                themeIcon.textContent = "🌚"; 
+                mk.classList.remove("text-yellow-400");
+                mk.classList.add("text-blue-300"); 
+            }
+        }
+
+        function getMenu() {
+            const menu = document.querySelector('.container');
+            const menulist=document.querySelector('.linklist');
+            const ulfixed=document.querySelector('.ulfixed');
+            const hamburger = document.getElementById('hamburgerIcon');
+            hamburger.classList.add('hidden');
+            ulfixed.classList.add('fixed');    
+            menu.classList.add('fixed');
+            menu.classList.add('h-screen');
+            menulist.classList.add('hidden');
+            menu.classList.toggle('hidden');
+            document.body.classList.add('overflow-y-hidden');
+        }
+        function getMenuClose() {
+            const menu = document.querySelector('.container');
+            menu.classList.remove('fixed');
+            const menulist=document.querySelector('.linklist');
+            menulist.classList.add('hidden');
+            const ulfixed=document.querySelector('.ulfixed');
+            ulfixed.classList.remove('fixed');
+            menu.classList.add('hidden');
+            const hamburger = document.getElementById('hamburgerIcon');
+            hamburger.classList.remove('hidden');
+            document.body.classList.remove('overflow-y-hidden');
+        }
+
+        let currentIndex = 0;
+        const slider = document.getElementById('slider');
+        const totalProjects = slider.children.length;
+        function moveSlide(direction) {
+            const slideWidth = slider.children[0].offsetWidth + 20;  
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = totalProjects - 3; 
+            } else if (currentIndex >= totalProjects - 2) {
+                currentIndex = 0;  
+            }
+            slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+        function nextSlide() {
+        moveSlide(1);
+        }
+        setInterval(() => nextSlide(), 2000); 
+    </script>
+    
+</body>
+</html>
