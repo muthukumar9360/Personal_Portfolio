@@ -47,29 +47,29 @@
 </head>
 <body class="overflow-x-hidden">
 
-    <div class="HomeContainer lg:flex flex-col lg:flex-row bg-black text-white w-screen min-h-screen lg:h-screen">
+    <div id="home" class="HomeContainer lg:flex flex-col lg:flex-row bg-black text-white w-screen min-h-screen lg:h-screen">
         <div id="mobileSidebar" class="container hidden lg:flex fixed flex-col justify-start lg:justify-start w-full h-full lg:w-1/5 lg:h-full bg-black z-50">
             <ul class="ulfixed list-none flex w-full flex-col items-center justify-start text-2xl font-roboto h-full gap-1.5 bg-black text-white font-bold">
                 <button class="inline text-yellow-300 text-extrabold text-3xl lg:hidden mt-5 ml-auto mr-5 z-50" onclick="getMenuClose()">✖</button>
-                <img src="Images/tech.gif" alt="Logo" class="w-full h-1/3 lg:h-1/2 object-contain -mt-5 lg:mt-0 z-5">
-                <li class="hover:overline lg:hover:underline"><a href="">Home</a></li>
-                <li class="hover:overline lg:hover:underline"><a href="">About</a></li>
-                <li class="hover:overline lg:hover:underline"><a href="">Education</a></li>
-                <li class="hover:overline lg:hover:underline"><a href="">Skills</a></li>
-                <li class="hover:overline lg:hover:underline"><a href="">Services</a></li>
-                <li class="hover:overline lg:hover:underline"><a href="">Experiences</a></li>
-                <li class="hover:overline lg:hover:underline"><a href="">Certifications</a></li>
-                <li class="hover:overline lg:hover:underline"><a href="">Projects</a></li>
-                <li class="hover:overline lg:hover:underline"><a href="">Contact</a></li>
+                <img src="Images/tech.gif" alt="Logo" loading="lazy" class="w-full h-1/3 lg:h-1/2 object-contain -mt-5 lg:mt-0 z-5">
+                <li class="hover:underline"><a href="#home">Home</a></li>
+                <li class="hover:underline"><a href="#about">About</a></li>
+                <li class="hover:underline"><a href="#education">Education</a></li>
+                <li class="hover:underline"><a href="#skills">Skills</a></li>
+                <li class="hover:underline"><a href="#services">Services</a></li>
+                <li class="hover:underline"><a href="#experience">Experiences</a></li>
+                <li class="hover:underline"><a href="#certification">Certifications</a></li>
+                <li class="hover:underline"><a href="#project">Projects</a></li>
+                <li class="hover:underline"><a href="#contact">Contact</a></li>
                 <button onclick="" style="border: 2px yellow solid; font-size: 20px;" class="rounded-full p-5 py-2 lg:hidden block mt-5">Download CV</button>
             </ul>
             <ul class="linklist list-none lg:flex gap-3 justify-center text-3xl text-white mt-8 pb-10 hidden">
-                <li><a href="https://facebook.com/yourprofile" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://youtube.com/yourchannel" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100052907556420" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/muthukumar_9360?utm_source=qr&igsh=MXF5ZjhzOWs4c21taw==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://youtube.com/@goldenminutes-mk?si=OZITyfQ5iGEZaj3R" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://github.com/muthukumar9360" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/muthuramalingam-a-908425283/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://wa.me/919360493470?text=Hi%20there%2C%20I%20found%20you%20on%20your%20website!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
             </ul>
         </div>
 
@@ -91,8 +91,8 @@
                         <p id="typewriterText" class="text-4xl font-extrabold -mt-5 text-white typewriter"></p>
                         <p class="text-xl mt-5 font-ibm">I'm a dedicated Full Stack Developer skilled in building complete web applications from front-end to back-end. With a passion for clean code and intuitive design and create scalable, responsive solutions using modern technologies. I enjoy solving complex problems and constantly learning to stay ahead in the development world.</p>
                         <div class="w-full flex justify-center gap-6 font-extrabold text-1xl mt-2">
-                            <button onclick="" style="border: 2px yellow solid;" class="rounded-full px-10 lg:px-12 py-2 lg:mt-5 lg:mb-8 mt-2">Hire Me 🤝</button>
-                            <button onclick="" style="border: 2px yellow solid;" class="rounded-full p-5 lg:px-8 py-2 lg:mt-5 lg:mb-8 mt-2">Download CV ⬇️</button>
+                            <a href="https://wa.me/919360493470?text=Hi%20there%2C%20I%20found%20you%20on%20your%20website!" target="_blank"><button onclick="" style="border: 2px yellow solid;" class="rounded-full px-10 lg:px-12 py-2 lg:mt-5 lg:mb-8 mt-2">Hire Me 🤝</button></a>
+                            <a href="resume.pdf" download="Muthuramalingam.A_Resume.pdf" target="_blank"><button onclick="" style="border: 2px yellow solid;" class="rounded-full p-5 lg:px-8 py-2 lg:mt-5 lg:mb-8 mt-2">Download CV ⬇️</button></a>
                         </div>
                     </div>
                 </div>
@@ -108,20 +108,20 @@
             <div class="absolute inset-0 pl-5 pr-12 flex flex-col justify-end text-white mb-5 section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
                 <div class="bg-white/10 rounded-3xl w-full max-w-[100%] p-5">
                     <ul class="flex list-none gap-2.5 justify-start text-2xl text-white pb-2">
-                        <li><a href="https://facebook.com/yourprofile" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="https://instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://youtube.com/yourchannel" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100052907556420" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/muthukumar_9360?utm_source=qr&igsh=MXF5ZjhzOWs4c21taw==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://youtube.com/@goldenminutes-mk?si=OZITyfQ5iGEZaj3R" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://github.com/muthukumar9360" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/muthuramalingam-a-908425283/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://wa.me/919360493470?text=Hi%20there%2C%20I%20found%20you%20on%20your%20website!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
                     </ul>
                     <h1 class="font-extrabold text-xl">HELLO! What's up?</h1>
                     <h1 class="font-extrabold text-2xl">I'm</h1>
                     <span class="text-2xl font-extrabold text-yellow-300">Muthuramalingam.A</span>
                     <p class="text-xs mt-2 font-ibm">I'm a dedicated Full Stack Developer skilled in building complete web applications from front-end to back-end. With a passion for clean code and intuitive design and create scalable, responsive solutions using modern technologies. I enjoy solving complex problems and constantly learning to stay ahead in the development world.</p>
                     <div class="flex flex-col gap-3 font-extrabold text-sm mt-5">
-                        <button class="rounded-full py-2 border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black transition">Hire Me 🤝</button>
-                        <button class="rounded-full py-2 border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black transition">Download CV ⬇️</button>
+                        <a href="https://wa.me/919360493470?text=Hi%20there%2C%20I%20found%20you%20on%20your%20website!" target="_blank" class="rounded-full py-2 border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black transition text-center">Hire Me 🤝</a>
+                        <a href="resume.pdf" download="Muthuramalingam.A_Resume.pdf" target="_blank" class="rounded-full py-2 border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black transition text-center">Download CV ⬇️</a>
                     </div>
                 </div>
             </div>
@@ -130,10 +130,10 @@
     </div>
     <hr><hr><hr><hr><hr>
 
-    <div class="flex flex-col lg:flex-row w-screen lg:h-screen bg-black min-h-screen">
+    <div id="about" class="flex flex-col lg:flex-row w-screen lg:h-screen bg-black min-h-screen">
         <div class="w-1/4 h-full hidden lg:block"></div>
         <div class="w-full lg:w-1/2 flex h-full items-center justify-center bg-[url('Images/gif.gif')] bg-contain bg-no-repeat bg-center">
-            <img src="Images/imgog.png" alt="Muthukumar" class="h-full w-full drop-shadow-[0_0_10px_rgba(59,130,246,1.0)]">
+            <img src="Images/imgog.png" loading="lazy" alt="Muthukumar" class="h-full w-full drop-shadow-[0_0_10px_rgba(59,130,246,1.0)]">
         </div>
         <div class="bg-black w-full lg:w-1/2 flex flex-col items-center text-white pt-3 lg:pt-0 lg:pr-16 lg:pl-5 px-8 section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
             <div class="w-full">
@@ -146,10 +146,10 @@
             I’m also learning JavaScript basics and diving deeper into Spring Boot for backend jobs. I enjoy solving real-world problems through code and continuously strive to improve my skills with each project I build.</p>
             <div class="pt-7">
                 <div class="flex lg:gap-4 gap-2">
-                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold flex items-center gap-2">
+                    <a href="https://github.com/muthukumar9360" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold flex items-center gap-2">
                       <span class="lg:block hidden">🚀 View my</span> Github →
                     </a>
-                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold flex items-center gap-2">
+                    <a href="https://wa.me/919360493470?text=Hi%20there%2C%20I%20found%20you%20on%20your%20website!" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold flex items-center gap-2">
                       <span class="hidden lg:block">💬 Contact me →</span>
                       <span class="block lg:hidden"> Contact →</span>
                     </a>
@@ -240,7 +240,7 @@
     </div>      
     <hr><hr><hr><hr><hr>
 
-    <div class="w-screen flex justify-center bg-black text-white">
+    <div id="skills" class="w-screen flex justify-center bg-black text-white">
         <div class="w-1/5 hidden lg:block"></div>
         <div class="w-4/5 flex flex-col gap-5 items-center section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
             <h1 class="mt-10 font-extrabold text-3xl border-4 border-yellow-500 px-10 py-3 rounded-full">My Skills</h1>
@@ -248,51 +248,51 @@
             <div class="grid grid-cols-3 gap-x-10 gap-y-10 lg:grid-cols-6 lg:gap-x-24 lg:gap-y-10 lg:px-20 pb-16 px-3">
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">HTML</h1>
-                    <img src="Logos/html.png" alt="">
+                    <img src="Logos/html.png" loading="lazy" alt="">
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">CSS</h1>
-                    <img src="Logos/css.png" alt="">
+                    <img src="Logos/css.png" loading="lazy" alt="">
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">TAILWIND</h1>
-                    <img src="Logos/Tailwind CSS.png" alt="">
+                    <img src="Logos/Tailwind CSS.png" loading="lazy" alt="">
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">JAVASCRIPT</h1>
-                    <img src="Logos/js.png" alt="">
+                    <img src="Logos/js.png" loading="lazy" alt="">
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">REACT</h1>
-                    <img src="Logos/React.png" alt="">
+                    <img src="Logos/React.png" loading="lazy" alt="">
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">C++</h1>
-                    <img src="Logos/c-.png" alt="">
+                    <img src="Logos/c-.png" loading="lazy" alt="">
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">PYTHON</h1>
-                    <img src="Logos/python.png" alt="">
+                    <img src="Logos/python.png" loading="lazy" alt="">
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">JAVA</h1>
-                    <img src="Logos/java.png" alt="">
+                    <img src="Logos/java.png" loading="lazy" alt="">
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">SPRING</h1>
-                    <img src="Logos/Spring.png" alt="">
+                    <img src="Logos/Spring.png" loading="lazy" alt="">
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">MYSQL</h1>
-                    <img src="Logos/mysql.png" alt="">
+                    <img src="Logos/mysql.png" loading="lazy" alt="">
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">MONGODB</h1>
-                    <img src="Logos/MongoDB.png" alt="">
+                    <img src="Logos/MongoDB.png" loading="lazy" alt="">
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h1 class="font-extrabold">GITHUB</h1>
-                    <img src="Logos/github.png" alt="">
+                    <img src="Logos/github.png" loading="lazy" alt="">
                 </div>
             </div>            
         </div>
@@ -302,12 +302,12 @@
     <section class="w-screen lg:h-[65vh] relative flex bg-black text-white z-10">
         <div class="w-1/5 hidden lg:block"></div>
         <div class="lg:w-4/5 w-full relative flex flex-col items-center justify-center mt-10 mb-10 lg:mb-0 lg:mt-0">
-          <img src="Images/tech2.gif" alt="Tech" class="lg:h-[300px] h-[120px] w-full lg:mx-20 px-5">
+          <img src="Images/tech2.gif" alt="Tech" loading="lazy" class="lg:h-[300px] h-[120px] w-full lg:mx-20 px-5">
           <h3 class="absolute z-5 top-[18%] lg:top-[24%] lg:left-[38%] text-[10px] lg:text-[20px] font-light" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">I CONSTANTLY TRY TO IMPROVE</h3>
           <h1 class="absolute lg:top-[40%] lg:left-[34%] text-[40px] lg:text-[70px] font-light" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">My Tech Stack</h1>
         </div>
     </section>
-    <div class="w-screen h-auto lg:flex justify-center text-white bg-black z-20 pb-5 lg:pb-0">
+    <div id="project" class="w-screen h-auto lg:flex justify-center text-white bg-black z-20 pb-5 lg:pb-0">
         <div class="w-1/5 hidden lg:block"></div>
         <section class="relative w-full lg:w-4/5 lg:max-w-6xl max-w-4xl pb-10 hidden lg:block">
             <div class="flex justify-center lg:items-start items-center">
@@ -317,7 +317,7 @@
                 <div class="flex transition-transform duration-500 sm:justify-start" id="slider">
                 <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md border-2 border-yellow-500 p-2 flex flex-col justify-between">
                 <div>
-                    <img src="Projects/pro1.jpeg" alt="Portfolio Website" class="lg:w-full lg:h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500 transition-shadow duration-300">
+                    <img src="Projects/pro1.jpeg" loading="lazy" alt="Portfolio Website" class="lg:w-full lg:h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500 transition-shadow duration-300">
                     <h3 class="lg:text-2xl text-1xl font-extrabold text-white mb-2">Portfolio Website</h3>
                     <p class="text-white text-sm mb-3">
                       A responsive portfolio using HTML, CSS & JS. Showcases skills, projects, and contact info. Mobile-friendly layout and smooth scroll navigation.
@@ -331,7 +331,7 @@
           
                 <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
                   <div>
-                    <img src="Projects/pro2.jpg" alt="E-commerce Site" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <img src="Projects/pro2.jpg" loading="lazy" alt="E-commerce Site" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
                     <h3 class="text-2xl font-extrabold text-white mb-2">E-commerce Website</h3>
                     <p class="text-white text-sm mb-3">
                       Full-stack Java Spring Boot e-commerce app with MySQL backend. Features include user auth, product management, and payment integration.
@@ -345,7 +345,7 @@
           
                 <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
                   <div>
-                    <img src="Projects/pro3.webp" alt="Weather App" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <img src="Projects/pro3.webp" loading="lazy" alt="Weather App" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
                     <h3 class="text-2xl font-extrabold text-white mb-2">Weather Dashboard</h3>
                     <p class="text-white text-sm mb-3">
                       JavaScript-based app that fetches real-time weather data from OpenWeatherMap API. Displays temperature, wind, humidity, and more.
@@ -359,7 +359,7 @@
           
                 <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
                   <div>
-                    <img src="Projects/pro4.jpeg" alt="Quiz App" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <img src="Projects/pro4.jpeg" loading="lazy" alt="Quiz App" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
                     <h3 class="text-2xl font-extrabold text-white mb-2">Quiz Platform</h3>
                     <p class="text-white text-sm mb-3">
                       A Java-based quiz system using Servlets & MySQL. Features timed questions, score tracking, session management, and leaderboard.
@@ -373,7 +373,7 @@
           
                 <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
                   <div>
-                    <img src="Projects/pro5.jpg" alt="Student Info System" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <img src="Projects/pro5.jpg" loading="lazy" alt="Student Info System" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
                     <h3 class="text-2xl font-extrabold text-white mb-2">Student Info System</h3>
                     <p class="text-white text-sm mb-3">
                       A CRUD-based system to manage student records including profile pictures, grades, and contact info using Java Spring Boot & MySQL.
@@ -387,7 +387,7 @@
 
                 <div class="min-w-[calc(33.33%-20px)] lg:mx-2 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
                   <div>
-                    <img src="Projects/pro6.webp" alt="To-Do App" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <img src="Projects/pro6.webp" loading="lazy" alt="To-Do App" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
                     <h3 class="text-2xl font-extrabold text-white mb-2">To-Do List App</h3>
                     <p class="text-white text-sm mb-3">
                       A simple yet effective to-do list with localStorage, due dates, and priority highlighting. Built using HTML, CSS, and vanilla JavaScript.
@@ -401,7 +401,7 @@
 
                 <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
                   <div>
-                    <img src="Projects/pro7.jpeg" alt="Code Executor" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <img src="Projects/pro7.jpeg" loading="lazy" alt="Code Executor" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
                     <h3 class="text-2xl font-extrabold text-white mb-2">Online Code Executor</h3>
                     <p class="text-white text-sm mb-3">
                       Code editor with Ace Editor + backend support in Java using ProcessBuilder. Supports Java, Python, C, and C++ with test case validation.
@@ -415,7 +415,7 @@
 
                 <div class="min-w-[calc(33.33%-20px)] lg:mx-2.5 bg-black rounded-2xl shadow-md p-2 border-2 border-yellow-500 flex flex-col justify-between">
                   <div>
-                    <img src="Projects/pro8.jpeg" alt="Blog Website" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
+                    <img src="Projects/pro8.jpeg" loading="lazy" alt="Blog Website" class="w-full h-64 object-cover rounded-xl mb-4 hover:shadow-lg hover:shadow-yellow-500">
                     <h3 class="text-2xl font-extrabold text-white mb-2">Personal Blog Website</h3>
                     <p class="text-white text-sm mb-3">
                       A static blog with markdown support. Built using HTML, Tailwind CSS, and JS. Supports dark mode and responsive design.
@@ -435,7 +435,7 @@
             </div>
             <div class="grid grid-cols-1 gap-y-5 p-5 z-5">
                 <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg">
-                    <img src="Projects/pro1.jpeg" alt="Portfolio Website"
+                    <img src="Projects/pro1.jpeg" loading="lazy" alt="Portfolio Website"
                         class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
                     <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
                               translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
@@ -450,7 +450,7 @@
                 </div>
                 
                 <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg">
-                    <img src="Projects/pro2.jpg" alt="E-commerce Website"
+                    <img src="Projects/pro2.jpg" loading="lazy" alt="E-commerce Website"
                         class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
                     <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
                               translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
@@ -464,7 +464,7 @@
                 </div>
                 
                 <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
-                    <img src="Projects/pro3.webp" alt="Weather Dashboard"
+                    <img src="Projects/pro3.webp" loading="lazy" alt="Weather Dashboard"
                         class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
                     <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
                               translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
@@ -478,7 +478,7 @@
                 </div>
                 
                 <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
-                    <img src="Projects/pro4.jpeg" alt="Quiz Platform"
+                    <img src="Projects/pro4.jpeg" loading="lazy" alt="Quiz Platform"
                         class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
                     <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
                               translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
@@ -492,7 +492,7 @@
                 </div>
                 
                 <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
-                    <img src="Projects/pro5.jpg" alt="Student Info System"
+                    <img src="Projects/pro5.jpg" loading="lazy" alt="Student Info System"
                         class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
                     <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
                               translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
@@ -506,7 +506,7 @@
                 </div>
                 
                 <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
-                    <img src="Projects/pro6.webp" alt="To-Do List App"
+                    <img src="Projects/pro6.webp" loading="lazy" alt="To-Do List App"
                         class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
                     <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
                               translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
@@ -520,7 +520,7 @@
                 </div>
                 
                 <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
-                    <img src="Projects/pro7.jpeg" alt="Online Code Executor"
+                    <img src="Projects/pro7.jpeg" loading="lazy" alt="Online Code Executor"
                         class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
                     <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
                               translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
@@ -534,7 +534,7 @@
                 </div>
                 
                 <div class="relative border-2 border-yellow-500 p-2 group overflow-hidden rounded-lg hidden project">
-                    <img src="Projects/pro8.jpeg" alt="Blog Website"
+                    <img src="Projects/pro8.jpeg" loading="lazy" alt="Blog Website"
                         class="w-full h-[220px] object-cover group-hover:blur-sm transition-all duration-500" />
                     <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-5 
                               translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
@@ -565,7 +565,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 pt-0 lg:pt-10 lg:pl-0 lg:pr-0 pr-5 pl-10 pb-5">
                 <div class="relative bg-gradient-to-r from-indigo-500 to-teal-400 p-5 lg:p-10 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:shadow-white">
                     <div class="absolute top-0 left-0 transform translate-x-[-50%] translate-y-[-50%] bg-white p-2 rounded-full shadow-lg">
-                        <img src="Images/saratha png.png" alt="School Logo" class="h-16 w-16 lg:h-24 lg:w-24 object-center">
+                        <img src="Images/saratha png.png" loading="lazy" alt="School Logo" class="h-16 w-16 lg:h-24 lg:w-24 object-center">
                     </div>
                     <h3 class="text-2xl lg:text-3xl font-semibold text-black mt-6">Senior Secondary School (12th Grade)</h3>
                     <p class="text-lg text-black font-bold mt-2">Saratha Matric Higher Secondary School</p>
@@ -576,7 +576,7 @@
                 </div>
                 <div class="relative bg-gradient-to-r from-indigo-500 to-teal-400 p-5 lg:p-10 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-3xl hover:shadow-white">
                     <div class="absolute top-0 left-0 transform translate-x-[-50%] translate-y-[-50%] bg-white p-2 rounded-full shadow-lg">
-                        <img src="Images/nec png.png" alt="College Logo" class="h-16 w-16 lg:h-24 lg:w-24 object-center">
+                        <img src="Images/nec png.png" loading="lazy" alt="College Logo" class="h-16 w-16 lg:h-24 lg:w-24 object-center">
                     </div>
                     <h3 class="text-2xl lg:text-3xl font-semibold text-black mt-6">Bachelor of Engineering in Computer Science</h3>
                     <p class="text-lg text-black font-bold mt-2">National Engineering College</p>
@@ -590,7 +590,7 @@
     </section>
     <hr><hr><hr><hr><hr>
 
-    <section class="bg-black flex lg:justify-center pb-10 px-5 lg:px-0">
+    <section id="certification" class="bg-black flex lg:justify-center pb-10 px-5 lg:px-0">
         <div class="w-1/5 bg-black hidden lg:block"></div>
         <div class="w-full lg:w-4/5 bg-black section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
             <h2 class="text-3xl lg:text-6xl font-extrabold text-center text-yellow-300 mt-5">Online Certifications</h2>
@@ -599,7 +599,7 @@
                 <div class="group [perspective:1000px] hidden lg:block">
                     <div class="relative h-64 lg:h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
-                            <img src="certification/logo/nptel.png" alt="Certificate" class="h-32 object-contain"/>
+                            <img src="certification/logo/nptel.png" loading="lazy" alt="Certificate" class="h-32 object-contain"/>
                             <div class="p-4 text-center">
                                 <h3 class="text-2xl font-bold text-gray-800">Ethical Hacking</h3>
                                 <p class="text-sm text-gray-500 mt-1">NPTEL Jul - Oct 2024</p>
@@ -621,7 +621,7 @@
                 <div class="group [perspective:1000px] hidden lg:block">
                     <div class="relative h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
-                            <img src="certification/logo/nptel.png" alt="Certificate" class="h-32 object-contain"/>
+                            <img src="certification/logo/nptel.png" loading="lazy" alt="Certificate" class="h-32 object-contain"/>
                             <div class="p-4 text-center">
                                 <h3 class="text-2xl font-bold text-gray-800">Technical English</h3>
                                 <p class="text-sm text-gray-500 mt-1">NPTEL Aug - Oct 2023</p>
@@ -643,7 +643,7 @@
                 <div class="group [perspective:1000px] hidden lg:block">
                     <div class="relative h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
-                            <img src="certification/logo/nptel.png" alt="Certificate" class="h-32 object-contain"/>
+                            <img src="certification/logo/nptel.png" loading="lazy" alt="Certificate" class="h-32 object-contain"/>
                             <div class="p-4 text-center">
                                 <h3 class="text-2xl font-bold text-gray-800">Joy of Computing Python</h3>
                                 <p class="text-sm text-gray-500 mt-1">NPTEL Jan - Apr 2024</p>
@@ -665,7 +665,7 @@
                 <div class="group [perspective:1000px]">
                     <div class="relative h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
-                            <img src="certification/logo/coursera.png" alt="Certificate" class="h-32 object-contain"/>
+                            <img src="certification/logo/coursera.png" loading="lazy" alt="Certificate" class="h-32 object-contain"/>
                             <div class="p-4 text-center">
                                 <h3 class="text-2xl font-bold text-gray-800">Web Development</h3>
                                 <p class="text-sm text-gray-500 mt-1">April 11 2025</p>
@@ -686,7 +686,7 @@
                 <div class="group [perspective:1000px]">
                     <div class="relative h-72 lg:h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
-                            <img src="certification/logo/coursera.png" alt="Certificate" class="h-32 object-contain"/>
+                            <img src="certification/logo/coursera.png" loading="lazy" alt="Certificate" class="h-32 object-contain"/>
                             <div class="p-4 text-center">
                                 <h3 class="text-2xl font-bold text-gray-800">Java Programming</h3>
                                 <p class="text-sm text-gray-500 mt-1">April 11 2025</p>
@@ -707,7 +707,7 @@
                 <div class="group [perspective:1000px] hidden lg:block">
                     <div class="relative h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
-                            <img src="certification/logo/udemy.jpg" alt="Certificate" class="h-32 object-cover"/>
+                            <img src="certification/logo/udemy.jpg" loading="lazy" alt="Certificate" class="h-32 object-cover"/>
                             <div class="p-4 text-center">
                                 <h3 class="text-2xl font-bold text-gray-800">Javascript Programming</h3>
                                 <p class="text-sm text-gray-500 mt-1">April 13 2025</p>
@@ -730,7 +730,7 @@
     </section>
     <div id="modal" class="fixed inset-0 bg-black hidden items-center justify-center z-50">
         <div class="bg-white rounded-lg overflow-hidden max-w-4xl w-full mx-4 p-2 relative">
-            <img id="modal-img" src="" alt="Certificate" class="w-full h-auto rounded" />
+            <img id="modal-img" src="" alt="Certificate" loading="lazy" class="w-full h-auto rounded" />
             <div class="text-center mt-4">
                 <button onclick="closeModal()" class="px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700">
                     Close
@@ -795,27 +795,27 @@
     </section>
     <hr><hr><hr><hr><hr>
 
-    <section class="bg-black py-12 px-6 lg:px-28 flex text-white" id="contact">
+    <section id="contact" class="bg-black py-12 px-6 lg:px-28 flex text-white" id="contact">
         <div class="w-1/5 hidden lg:block"></div>
         <div class="lg:w-4/5 w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center section-wrapper opacity-0 translate-y-10 transition-all duration-1000 ease-out">
             <div class="animate-fade-in flex justify-center">
-                <img src="Images/contact.jpg" alt="Contact" class="w-11/12 rounded-3xl" style="box-shadow: 5px 5px 10px white;"/>
+                <img src="Images/contact.jpg" alt="Contact" loading="lazy" class="w-11/12 rounded-3xl" style="box-shadow: 5px 5px 10px white;"/>
             </div>
             <div class="space-y-6">
                 <h2 class="text-4xl font-extrabold w-full text-center">Let's Connect</h2>
                 <p class="text-md">Whether you have a question, a project, or just want to connect — I'm always open to meaningful conversations.</p>
                 <div class="space-y-2 text-sm">
-                    <p><strong>Email:</strong> <a href="mailto:perumpatayans@gmail.com" class="hover:underline">perumpatayans@gmail.com</a></p>
-                    <p><strong>Phone:</strong> <a href="tel:+919360493470" class="hover:underline">+91 9360493470</a></p>
-                    <p><strong>Location:</strong> Tirunelveli, India</p>
+                    <p><strong>Email:</strong> <a href="mailto:perumpatayans@gmail.com?subject=Hello" class="hover:underline text-blue-400">perumpatayans@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+919360493470" class="hover:underline text-blue-400">+91 9360493470</a></p>
+                    <p class="text-blue-400"><strong class="text-white">Location:</strong> <a href="https://www.google.com/maps?q=8.776122134187803, 77.71496469824324" target="_blank" class="hover:underline">Tirunelveli, India</a></p>
                 </div>
                 <div class="flex space-x-4 mt-4 justify-center lg:justify-normal">
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-yellow-500"><i class="fab fa-linkedin fa-lg"></i></a>
-                    <a href="https://github.com/yourusername" target="_blank" class="hover:text-yellow-500"><i class="fab fa-github fa-lg"></i></a>
-                    <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-yellow-500"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-yellow-500"><i class="fab fa-youtube fa-lg"></i></a>
-                    <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-yellow-500"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-yellow-500"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/muthuramalingam-a-908425283/" target="_blank" class="hover:text-yellow-500"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://github.com/muthukumar9360" target="_blank" class="hover:text-yellow-500"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.instagram.com/muthukumar_9360?utm_source=qr&igsh=MXF5ZjhzOWs4c21taw==" target="_blank" class="hover:text-yellow-500"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://youtube.com/@goldenminutes-mk?si=OZITyfQ5iGEZaj3R" target="_blank" class="hover:text-yellow-500"><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100052907556420" target="_blank" class="hover:text-yellow-500"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://wa.me/919360493470?text=Hi%20there%2C%20I%20found%20you%20on%20your%20website!" target="_blank" class="hover:text-yellow-500"><i class="fab fa-whatsapp fa-lg"></i></a>
                 </div>
                 <form class="space-y-4 mt-6">
                     <input type="text" placeholder="Your Name" required class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-indigo-400 outline-none" />
@@ -832,13 +832,13 @@
         <div class="w-full lg:w-4/5 px-4 flex flex-col lg:flex-row items-center justify-center gap-0 lg:gap-10 text-sm lg:text-xl">
             <p>&copy; 2025 A.Muthuramalingam. All rights reserved.</p>
             <div class="mt-3 md:mt-0 flex space-x-4">
-                <a href="https://github.com/yourusername" target="_blank" class="hover:text-yellow-600">
+                <a href="https://github.com/muthukumar9360" target="_blank" class="hover:text-yellow-600">
                 <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-yellow-600">
+                <a href="https://www.linkedin.com/in/muthuramalingam-a-908425283/" target="_blank" class="hover:text-yellow-600">
                 <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:perumpatayans@gmail.com" class="hover:text-yellow-600">
+                <a href="mailto:perumpatayans@gmail.com?subject=Hello&body=I want to get in touch with you." class="hover:text-yellow-600">
                 <i class="fas fa-envelope"></i>
                 </a>
             </div>
