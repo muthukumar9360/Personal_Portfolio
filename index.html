@@ -52,16 +52,16 @@
             <ul class="ulfixed list-none flex w-full flex-col items-center justify-start text-2xl font-roboto h-full gap-1.5 bg-black text-white font-bold">
                 <button class="inline text-yellow-300 text-extrabold text-3xl lg:hidden mt-5 ml-auto mr-5 z-50" onclick="getMenuClose()">✖</button>
                 <img src="Images/tech.gif" alt="Logo" loading="lazy" class="w-full h-1/3 lg:h-1/2 object-contain -mt-5 lg:mt-0 z-5">
-                <li class="hover:underline"><a href="#home">Home</a></li>
-                <li class="hover:underline"><a href="#about">About</a></li>
-                <li class="hover:underline"><a href="#education">Education</a></li>
-                <li class="hover:underline"><a href="#skills">Skills</a></li>
-                <li class="hover:underline"><a href="#services">Services</a></li>
-                <li class="hover:underline"><a href="#experience">Experiences</a></li>
-                <li class="hover:underline"><a href="#certification">Certifications</a></li>
-                <li class="hover:underline"><a href="#project">Projects</a></li>
-                <li class="hover:underline"><a href="#contact">Contact</a></li>
-                <button onclick="" style="border: 2px yellow solid; font-size: 20px;" class="rounded-full p-5 py-2 lg:hidden block mt-5">Download CV</button>
+                <li class="hover:underline"><a href="#home" onclick="getMenuClose()">Home</a></li>
+                <li class="hover:underline"><a href="#about" onclick="getMenuClose()">About</a></li>
+                <li class="hover:underline"><a href="#education" onclick="getMenuClose()">Education</a></li>
+                <li class="hover:underline"><a href="#skills" onclick="getMenuClose()">Skills</a></li>
+                <li class="hover:underline"><a href="#services" onclick="getMenuClose()">Services</a></li>
+                <li class="hover:underline"><a href="#experience" onclick="getMenuClose()">Experiences</a></li>
+                <li class="hover:underline"><a href="#certification" onclick="getMenuClose()">Certifications</a></li>
+                <li class="hover:underline"><a href="#project" onclick="getMenuClose()">Projects</a></li>
+                <li class="hover:underline"><a href="#contact" onclick="getMenuClose()">Contact</a></li>
+                <a href="resume.pdf" download="Muthuramalingam.A_Resume.pdf" target="_blank"><button onclick="" style="border: 2px yellow solid; font-size: 20px;" class="rounded-full p-5 py-2 lg:hidden block mt-5">Download CV</button></a>
             </ul>
             <ul class="linklist list-none lg:flex gap-3 justify-center text-3xl text-white mt-8 pb-10 hidden">
                 <li><a href="https://www.facebook.com/profile.php?id=100052907556420" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
@@ -596,7 +596,7 @@
             <h2 class="text-3xl lg:text-6xl font-extrabold text-center text-yellow-300 mt-5">Online Certifications</h2>
             <h2 class="text-xl lg:text-2xl font-extrabold text-white mt-3 mb-8 text-center">These aren't just certificates, they're milestones.</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 max-w-6xl mx-auto">
-                <div class="group [perspective:1000px] hidden lg:block">
+                <div class="group [perspective:1000px] hidden lg:block certify">
                     <div class="relative h-64 lg:h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
                             <img src="certification/logo/nptel.png" loading="lazy" alt="Certificate" class="h-32 object-contain"/>
@@ -618,7 +618,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="group [perspective:1000px] hidden lg:block">
+                <div class="group [perspective:1000px] hidden lg:block certify">
                     <div class="relative h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
                             <img src="certification/logo/nptel.png" loading="lazy" alt="Certificate" class="h-32 object-contain"/>
@@ -640,7 +640,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="group [perspective:1000px] hidden lg:block">
+                <div class="group [perspective:1000px] hidden lg:block certify">
                     <div class="relative h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
                             <img src="certification/logo/nptel.png" loading="lazy" alt="Certificate" class="h-32 object-contain"/>
@@ -704,7 +704,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="group [perspective:1000px] hidden lg:block">
+                <div class="group [perspective:1000px] hidden lg:block certify">
                     <div class="relative h-60 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div class="absolute inset-0 bg-white rounded-3xl overflow-hidden [backface-visibility:hidden] z-20 flex flex-col justify-center">
                             <img src="certification/logo/udemy.jpg" loading="lazy" alt="Certificate" class="h-32 object-cover"/>
@@ -726,6 +726,9 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center lg:hidden pt-8">
+                <button id="viewMorecBtn" class="bg-yellow-500 text-white px-4 py-2 rounded-full" onclick="showcertificates()">View More Certification</button>
+            </div> 
         </div>
     </section>
     <div id="modal" class="fixed inset-0 bg-black hidden items-center justify-center z-50">
@@ -863,6 +866,20 @@
         document.querySelectorAll('.section-wrapper').forEach(section => {
             observer.observe(section);
         });
+
+        function showcertificates(){
+            const hiddenProjects = document.querySelectorAll('.certify');
+            const viewMoresBtn=document.getElementById("viewMorecBtn");
+            hiddenProjects.forEach(function(project) {
+                project.classList.toggle('hidden');
+            });
+
+            if (viewMoresBtn.innerText === "View More Certification") {
+            viewMoresBtn.innerText = "View Less Certification";
+            } else {
+                viewMoresBtn.innerText = "View More Certification";
+            }
+        }
         
         function showservice(){
             const hiddenProjects = document.querySelectorAll('.service');
@@ -970,16 +987,18 @@
             document.body.classList.add('overflow-y-hidden');
         }
         function getMenuClose() {
-            const menu = document.querySelector('.container');
-            menu.classList.remove('fixed');
-            const menulist=document.querySelector('.linklist');
-            menulist.classList.add('hidden');
-            const ulfixed=document.querySelector('.ulfixed');
-            ulfixed.classList.remove('fixed');
-            menu.classList.add('hidden');
-            const hamburger = document.getElementById('hamburgerIcon');
-            hamburger.classList.remove('hidden');
-            document.body.classList.remove('overflow-y-hidden');
+            if (window.innerWidth <= 768){
+                const menu = document.querySelector('.container');
+                menu.classList.remove('fixed');
+                const menulist=document.querySelector('.linklist');
+                menulist.classList.add('hidden');
+                const ulfixed=document.querySelector('.ulfixed');
+                ulfixed.classList.remove('fixed');
+                menu.classList.add('hidden');
+                const hamburger = document.getElementById('hamburgerIcon');
+                hamburger.classList.remove('hidden');
+                document.body.classList.remove('overflow-y-hidden');
+            }
         }
 
         let currentIndex = 0;
